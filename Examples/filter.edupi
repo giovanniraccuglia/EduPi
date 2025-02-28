@@ -1,0 +1,32 @@
+list x = [5, "ciao", 5.8, 6, 243, "casa", "pizza", 89.24, "tavolo", 2, 67.45, "torta", 34, 21.8, "palla"];
+list p = [3, "prova", 21.9];
+list q = [78, 98.33, 1];
+
+x.insert(3, p);
+x.insert(7, q);
+
+list i = [];
+list r = [];
+list s = [];
+list l = [];
+
+for n in x {
+	if(type(n) == "integer") {
+		i.append(n);
+	}
+	if(type(n) == "real") {
+		r.append(n);
+	}
+	if(type(n) == "string") {
+		s.append(n);
+	}
+	if(type(n) == "list") {
+		l.append(n);
+	}
+}
+
+println("Lista Originale    --> " >> x);
+println("Lista di Interi    --> " >> i);
+println("Lista di Reali     --> " >> r);
+println("Lista di Stringhe  --> " >> s);
+println("Lista di Liste     --> " >> l);
